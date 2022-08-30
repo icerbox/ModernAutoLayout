@@ -1,8 +1,10 @@
 import UIKit
 
+@IBDesignable
 final class RGBView: UIView {
   
-  var padding: CGFloat = 20.0 {
+  
+  @IBInspectable var padding: CGFloat = 20.0 {
     didSet {
       setNeedsLayout()
     }
