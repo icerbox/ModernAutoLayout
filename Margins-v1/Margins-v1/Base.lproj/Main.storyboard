@@ -16,31 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8G-md-jcP" userLabel="RedView">
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8G-md-jcP" userLabel="RedView">
                                 <rect key="frame" x="50" y="88" width="314" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8x-b4-Ipt" userLabel="GreenView">
                                         <rect key="frame" x="8" y="8" width="298" height="758"/>
+                                        <viewLayoutGuide key="safeArea" id="Kvz-Ud-4uM"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="zjq-PZ-SRE"/>
                                 <color key="backgroundColor" red="1" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="m8x-b4-Ipt" secondAttribute="bottom" id="0Gy-IR-XPS"/>
-                                    <constraint firstItem="m8x-b4-Ipt" firstAttribute="leading" secondItem="X8G-md-jcP" secondAttribute="leadingMargin" id="0N6-Dv-bcC"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="m8x-b4-Ipt" secondAttribute="trailing" id="hgO-le-dF2"/>
-                                    <constraint firstItem="m8x-b4-Ipt" firstAttribute="top" secondItem="X8G-md-jcP" secondAttribute="topMargin" id="wao-Aq-cEa"/>
+                                    <constraint firstItem="m8x-b4-Ipt" firstAttribute="leading" secondItem="X8G-md-jcP" secondAttribute="leadingMargin" id="L19-6o-JeD"/>
+                                    <constraint firstItem="m8x-b4-Ipt" firstAttribute="top" secondItem="X8G-md-jcP" secondAttribute="topMargin" id="QkC-S9-xuf"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="m8x-b4-Ipt" secondAttribute="bottom" id="Rl9-Xx-e2B"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="m8x-b4-Ipt" secondAttribute="trailing" id="ilF-9C-Iq1"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X8G-md-jcP" secondAttribute="bottom" id="0N3-zk-qLx"/>
-                            <constraint firstItem="X8G-md-jcP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gwc-Jy-2cQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="X8G-md-jcP" secondAttribute="trailing" id="cny-he-JpH"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="X8G-md-jcP" secondAttribute="leading" id="oS7-7I-gmW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X8G-md-jcP" secondAttribute="trailing" id="3a5-Ks-WAi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X8G-md-jcP" secondAttribute="bottom" id="IWe-qY-VUh"/>
+                            <constraint firstItem="X8G-md-jcP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="McI-Uc-WIF"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="X8G-md-jcP" secondAttribute="leading" id="ubM-zC-q9D"/>
                         </constraints>
                         <directionalEdgeInsets key="directionalLayoutMargins" top="50" leading="50" bottom="50" trailing="50"/>
                     </view>
