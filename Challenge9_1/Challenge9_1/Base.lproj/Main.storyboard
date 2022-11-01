@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Challenge9_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7F-gZ-5c7">
+                                <rect key="frame" x="20" y="371" width="183" height="164"/>
+                                <color key="backgroundColor" red="1" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Slow">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="slow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1Q-f9-OWU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD7-tA-MQz">
+                                <rect key="frame" x="211" y="432.5" width="183" height="41"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Fast">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ej-be-Ohx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PD7-tA-MQz" firstAttribute="leading" secondItem="y7F-gZ-5c7" secondAttribute="trailing" constant="8" symbolic="YES" id="2gJ-KS-GW8"/>
+                            <constraint firstItem="y7F-gZ-5c7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JJ1-Xe-fAx"/>
+                            <constraint firstItem="PD7-tA-MQz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dVP-Fh-h3f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PD7-tA-MQz" secondAttribute="trailing" id="lP8-pF-9Lg"/>
+                            <constraint firstItem="y7F-gZ-5c7" firstAttribute="width" secondItem="PD7-tA-MQz" secondAttribute="width" id="m2l-jG-J8z"/>
+                            <constraint firstItem="PD7-tA-MQz" firstAttribute="height" secondItem="y7F-gZ-5c7" secondAttribute="height" multiplier="4" identifier="FastHeightConstraint" id="woQ-Ko-03D" userLabel="Fast Height Constraint"/>
+                            <constraint firstItem="y7F-gZ-5c7" firstAttribute="height" secondItem="PD7-tA-MQz" secondAttribute="height" multiplier="4" identifier="SlowHeightConstraint" id="yRk-6A-pll"/>
+                            <constraint firstItem="y7F-gZ-5c7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="z9r-Er-mUs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="woQ-Ko-03D"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="fastHeightConstraint" destination="woQ-Ko-03D" id="O2e-b8-nLc"/>
+                        <outlet property="slowHeightConstraint" destination="yRk-6A-pll" id="trG-eV-gta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

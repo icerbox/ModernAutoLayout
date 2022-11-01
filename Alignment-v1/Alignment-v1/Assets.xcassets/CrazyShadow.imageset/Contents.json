@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "alignment-insets" : {
+        "bottom" : 30,
+        "left" : 0,
+        "right" : 30,
+        "top" : 0
+      },
+      "filename" : "CrazyShadow.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
